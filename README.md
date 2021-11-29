@@ -8,7 +8,7 @@ View is for selecting fonts instead of NSFontPanel
 Just copy FontSelctionView.swift and FontSelectionView.xib into your project.
 
 example:
-```
+```Swift
     let fontView = FontSelectionView.instantiate()
 
     override func viewDidLoad() {
