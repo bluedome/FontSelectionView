@@ -1,4 +1,8 @@
 # FontSelectionView
+![swift](https://shields.io/static/v1?label=Swift&message=5&color=orange)
+![platform](https://shields.io/static/v1?label=Platform&message=macOS&color=yellowgreen)
+![mit](https://shields.io/github/license/bluedome/FontSelectionView)
+
 View is for selecting fonts instead of NSFontPanel
 
 ![demo](./font_anim.gif)
