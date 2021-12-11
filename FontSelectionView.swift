@@ -360,7 +360,7 @@ class FontSelectionView: NSView, NSTextFieldDelegate, NSMenuDelegate {
     
 }
 
-private class MenuItemlView: NSView, NSMenuDelegate {
+private class MenuItemlView: NSView {
     var font: NSFont = .systemFont(ofSize: NSFont.systemFontSize)
     var selectHandler: ((NSMenuItem) -> Void)?
     
@@ -433,7 +433,14 @@ private class MenuItemlView: NSView, NSMenuDelegate {
             effectView.isHidden = true
         }
         
-        innerView.string = NSAttributedString(string: item.title, attributes: [.font: font, .strokeColor: NSColor.black])
+        let color: NSColor
+        switch effectiveAppearance.name {
+        case .darkAqua, .vibrantDark, .accessibilityHighContrastDarkAqua, .accessibilityHighContrastVibrantDark:
+            color = .white
+        default:
+            color = .black
+        }
+        innerView.string = NSAttributedString(string: item.title, attributes: [.font: font, .foregroundColor: color])
     }
     
     override func mouseUp(with event: NSEvent) {

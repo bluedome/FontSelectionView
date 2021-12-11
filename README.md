@@ -9,7 +9,7 @@ View is for selecting fonts instead of NSFontPanel
 
 ## How to Use
 
-Just copy FontSelctionView.swift and FontSelectionView.xib into your project.
+Just copy *FontSelctionView.swift* and *FontSelectionView.xib* into your project.
 
 example:
 ```Swift
